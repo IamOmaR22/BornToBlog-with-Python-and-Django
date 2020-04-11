@@ -51,9 +51,21 @@
           <div class="row">
             <div class="col-md-8">
 
+            <!-- Flash Message Start -->
+              {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+              {% endif %}
+            <!-- Flash Message End -->
+
+            <!-- Block Content Start -->
               {% block content %}
 
               {% endblock %}
+            <!-- Block Content End -->
 
             </div>
             <div class="col-md-4">

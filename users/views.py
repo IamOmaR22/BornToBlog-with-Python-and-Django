@@ -11,9 +11,9 @@ def register(request):
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')  # Grab the username that is submitted for now
-            messages.success(request, f'Account created for {username}!')
-            return redirect('blog-home')
+            # username = form.cleaned_data.get('username')  # Grab the username that is submitted for now
+            messages.success(request, f'Your account has been created! You are now able to log in')
+            return redirect('login')
 
     else:    # This is not a POST Request. We will just create a form
 

@@ -125,4 +125,7 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # After login
-LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_REDIRECT_URL = 'blog-home'  # blog-home is the name we gave to our urlpatterns for home routes
+
+# For Login required
+LOGIN_URL = 'login'  # login is the name we gave to our urlpatterns for login routes

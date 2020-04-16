@@ -122,6 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory where the uploaded files will be saved.
+MEDIA_URL = '/media/'  # It is the public url of that directory. Access media through browser.
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # After login

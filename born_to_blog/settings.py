@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',  # UsersConfig from users -> apps.py
+    'django_cleanup.apps.CleanupConfig',   # should go after your apps
     'crispy_forms',
 ]
 

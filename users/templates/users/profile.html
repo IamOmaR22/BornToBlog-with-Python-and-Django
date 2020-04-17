@@ -12,7 +12,23 @@
           <p class="text-secondary">{{ user.email }}</p>
         </div>
       </div>
-      <!-- FORM HERE -->
+
+    <!-- Don't Forget To Add enctype="multipart/form-data". If We Leave This, Then It Won't Save Data In The Background -->
+      <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile Info</legend>
+
+                {{ u_form | crispy }}
+                {{ p_form | crispy }}
+
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Update</button>
+            </div>
+        </form>
+
     </div>
 
 {% endblock %}

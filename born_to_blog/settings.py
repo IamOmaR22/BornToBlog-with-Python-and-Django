@@ -135,3 +135,12 @@ LOGIN_REDIRECT_URL = 'blog-home'  # blog-home is the name we gave to our urlpatt
 
 # For Login required
 LOGIN_URL = 'login'  # login is the name we gave to our urlpatterns for login routes
+
+
+# Email For Reset Password
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587  # Integer. Not A String.
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')  # Access From Environment Variables
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')  # Access From Environment Variables

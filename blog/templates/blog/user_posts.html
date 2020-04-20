@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Count The Total Post For Individual Author. How Many Posts Have For An Individual User/Author -->
     <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
 
     {% for post in posts %}

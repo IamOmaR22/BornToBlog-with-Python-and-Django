@@ -12,8 +12,8 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'   # It's Called f'{}' string
 
  # Resize Image Automatically
-    def save(self):
-        super().save()  # Run The Save Method Of Our Parent Class.
+    def save(self, *args, **kwargs):
+        super(Profile, self).save(*args, **kwargs)  # Run The Save Method Of Our Parent Class.
 
         img = Image.open(self.image.path)  # self.image.path will open image of current instance.
 

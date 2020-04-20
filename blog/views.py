@@ -19,7 +19,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html'  # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']  # ['date_posted'] - oldest to newest and ['-date_posted'] - newest to oldest
-    paginate_by = 5  # Two Post Per Page
+    paginate_by = 5  # Five Post Per Page
 
 
 

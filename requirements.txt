@@ -1,11 +1,8 @@
 asgiref==3.2.7
-<<<<<<< HEAD
 dj-database-url==0.5.0
 Django==3.0.5
 django-cleanup==4.0.0
-=======
 Django==3.0.7
->>>>>>> 4793dc7d79fa9d988e27fe3de11231d27f475d65
 django-crispy-forms==1.9.0
 django-heroku==0.3.1
 gunicorn==20.0.4

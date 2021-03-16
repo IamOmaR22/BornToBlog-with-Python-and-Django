@@ -28,7 +28,7 @@ SECRET_KEY = '&gomarl!z+310@db4p2jza*5_r98-==9ok%(5xk#zfaruk%8ut9aya7x8r+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['borntoblog.herukoapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -87,6 +87,9 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# db_from_env = dj_database_url.config()
+# DATABASES[‘default’].update(db_from_env)
 
 
 # Password validation
